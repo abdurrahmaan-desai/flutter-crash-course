@@ -2,10 +2,12 @@ import '../models/location_fact.dart';
 import '../models/location.dart';
 
 class MockLocation extends Location{
+  MockLocation({required super.name, required super.url, required super.facts});
+
   static FetchAny(){
     return Location(
         name: 'Bamboo grove',
-        url: 'https://enigma.amsd.tech',
+        url: 'https://www.google.co.uk',
         facts: <LocationFact> [
           LocationFact(
             title: 'Summary',

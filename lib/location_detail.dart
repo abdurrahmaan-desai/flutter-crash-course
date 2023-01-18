@@ -5,7 +5,7 @@ class LocationDetail extends StatelessWidget {
 
   final Location location;
 
-  LocationDetail(this.location)
+  LocationDetail(this.location);
 
   @override
   Widget build(BuildContext context){
@@ -15,13 +15,6 @@ class LocationDetail extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: _renderFacts(location),
-          // [
-          //   // _section("One!", Colors.red),
-          //   // _section("Two!", Colors.green),
-          //   // _section("Three!", Colors.blue)
-          //
-          // ]
-
         ));
   }
 

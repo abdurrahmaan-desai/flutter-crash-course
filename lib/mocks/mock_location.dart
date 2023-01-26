@@ -7,17 +7,31 @@ class MockLocation extends Location{
   static FetchAny(){
     return Location(
         name: 'Bamboo grove',
-        url: 'https://www.google.co.uk',
+        url: 'https://cdn-images-1.medium.com/max/2000/1*vdJuSUKWl_SA9Lp-32ebnA.jpeg',
         facts: <LocationFact> [
           LocationFact(
             title: 'Summary',
             text:
-              'This the summary location fact'
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do '
+                  'eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+                  'Ut enim ad minim veniam, quis nostrud exercitation ullamco '
+                  'laboris nisi ut aliquip ex ea commodo consequat. Duis aute '
+                  'irure dolor in reprehenderit in voluptate velit esse cillum '
+                  'dolore eu fugiat nulla pariatur. Excepteur sint occaecat '
+                  'cupidatat non proident, sunt in culpa qui officia deserunt '
+                  'mollit anim id est laborum.'
           ),
           LocationFact(
             title: 'How to get there',
             text:
-              'This is the how to get there fact'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do '
+                'eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+                'Ut enim ad minim veniam, quis nostrud exercitation ullamco '
+                'laboris nisi ut aliquip ex ea commodo consequat. Duis aute '
+                'irure dolor in reprehenderit in voluptate velit esse cillum '
+                'dolore eu fugiat nulla pariatur. Excepteur sint occaecat '
+                'cupidatat non proident, sunt in culpa qui officia deserunt '
+                'mollit anim id est laborum.'
           )
         ]
       );

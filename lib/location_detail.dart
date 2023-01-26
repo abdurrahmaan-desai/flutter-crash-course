@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'models/location.dart';
+import 'styles.dart';
 
 class LocationDetail extends StatelessWidget {
 
@@ -10,7 +11,7 @@ class LocationDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-        appBar: AppBar(title: Text(location.name)),
+        appBar: AppBar(title: Text(location.name, style: Styles.navBarTitle,)),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -41,10 +42,7 @@ class LocationDetail extends StatelessWidget {
       child: Text(
         text,
         textAlign: TextAlign.left,
-        style: TextStyle(
-          fontSize: 25.0,
-          color: Colors.black,
-        ),
+        style: Styles.headerLarge,
       ),
     );
   }
@@ -52,7 +50,7 @@ class LocationDetail extends StatelessWidget {
   Widget _sectionText(String text){
     return Container(
       padding: EdgeInsets.fromLTRB(25.0, 15.0, 25.0, 15.0),
-      child: Text(text),
+      child: Text(text, style: Styles.textDefault,),
     );
   }
 
